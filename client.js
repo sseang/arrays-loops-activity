@@ -7,9 +7,11 @@
  *    hobbies
  */
 let groupHobbies = ['Video','Anime'];
+
 for (let groupIndex = 0; groupIndex < groupHobbies.length; groupIndex += 1) {
      console.log(groupHobbies[groupIndex])
 };
+
 console.log('Hobbies are', groupHobbies.length);
 
 // Example output
@@ -33,12 +35,15 @@ console.log('!!!Question 2!!!!');
 let colors = ['red', 'blue','yellow','green','pink','teal'];
 let tealCount = 0;
 console.log(colors)
+
 for (let i = 0; i < colors.length; i++) {
      if (colors[i] === 'teal') {
           console.log(tealCount = tealCount+1)
      }
 }
+
 console.log('Teal found', tealCount)
+
 // Example output
 // green, red, teal, orange, teal
 // Teal was found 2 times
@@ -53,8 +58,25 @@ console.log('Teal found', tealCount)
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
+let numbers = [3, 7, 2, 8, 11, 4];
+
+console.log(numbers);
+
+let oddNumbers = []
+let evenNumbers = []
 
 
+for (let i = 0; i < numbers.length; i++) {
+     if (numbers[i] % 2 === 0) {
+     evenNumbers.push(numbers[i]);
+     }   
+    else {
+     oddNumbers.push(numbers[i]);
+    } 
+}
+
+console.log('Even Numbers:', evenNumbers);
+console.log('Odd Numbers:', oddNumbers);
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
 // Odd 3, 7, 11
@@ -69,6 +91,22 @@ console.log('Teal found', tealCount)
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
+
+let booleanArray = [ true, false, false, false, false ];
+let toggled = [];
+
+for (let i = 0; i < booleanArray.length; i++) {
+     if (booleanArray[i] === false) {
+          let bootrue = true;
+          toggled.push(bootrue);
+     }
+     else {
+          let boofalse = false;
+          toggled.push(boofalse);
+     }
+}
+console.log(booleanArray);
+console.log(toggled);
 
 
 // Example output
@@ -87,6 +125,19 @@ console.log('Teal found', tealCount)
  *
  * Hint: Try using a while loop for this one.
  */
+
+let numbers2 = [3, 0, 2, 8, 0, 0, 0];
+console.log(numbers2);
+
+let count = 0;
+while (count <=2) {
+     count++;
+     console.log(count);
+     numbers2.pop();
+}
+
+
+console.log(numbers2);
 
 
 // Example output
